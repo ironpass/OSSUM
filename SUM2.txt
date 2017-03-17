@@ -1,0 +1,35 @@
+﻿答案可參考第八版課本 4.00
+2.1 What is the purpose of system calls
+	- System calls allow user-level processes to request services of he operating system
+2.2 Five OS's activities regard to process management
+	1) Create and delete system process
+	2) suspend and resume process
+	3) process synchronization
+	4) process communication
+	5) deadlock handling
+2.3 Three OS's activities regard to memory management
+	1) Keep track of memory users
+	2) Decide which processes are to be loaded into memory
+	3) Allocate and deallocate memory space
+2.4 Three OS's activities regard to secondary-memory management
+	1) Free-space management
+	2) Storage allocation
+	3) Disk scheduling
+2.5 What is the purpose of the command interpreter? Why is it usually separate from the kernel
+	- It read commands from user to call the system calls. Usually not part of the kernel because conmmand interpreter is subject to changes.
+2.6 What is the purpose of system programs
+	- System programs can be viewed as bundles of system calls.
+2.7 The service and functions provided by an operating system can be dividede into two ma in categories
+	1) Enforcing protection between different processes running concurrently in the system
+	2) Provide new functionality that is not supported by hardwares. (Virtual memory and file system)
+2.8 What are the five major activities of an operating system with regard to file management
+	1) Creating and Deleting Files
+	2) Creating and Deleting Directories
+	3) File Manipulation Instructions
+	4) Mapping to Permanent Storage
+	5) Backing Up Files
+2.9 Why is the separation of mechanism and policy desirable?
+	- With mechanism and policy separate, the policy may be changed at will while the mechanism stays unchanged. This arrangement provides a more flexible system.
+2.10 What is the main advantage of the microkernel approach to system design? How do user programs and system services interact in a microkernel architecture? What are the disadvantages of the microkernel approach
+	- All new services are added to user space and consequently do not require modification of the kernel. Micro kernel provides more security and reliability, since most services are running as user rather than kernel
+	- But it suffers from performance decrease due to increased system function overhead.
