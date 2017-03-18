@@ -1,0 +1,21 @@
+https://www.tutorialspoint.com/operating_system/os_multi_threading.htm
+
+4.1 Provide three programming examples in which multithreading provides better performance than a single-threaded solution
+	- A Web server that services each request in a separate thread.
+	- A parallelized application such as matrix multiplication where different parts of the matrix may be worked on in parallel.
+	- An interactive GUI program such as a debugger where a thread is used to monitor user input, another thread represents the running application, and a third thread monitors performance
+4.2 What are two differences between user-level threads and kernel-level threads? Under what circumstances is one type better than the other?
+	a. User-level threads are unknown by the kernel, whereas the kernel is aware of kernel threads.
+	b. On systems using either M:1 or M:N mapping, user threads are scheduled by the thread library and the kernel schedules kernel threads
+	c. Kernel threads need not be associated with a process whereas every user thread belongs to a process. Kernel threads are generally more expensive to maintain than user threads as they must be represented with a kernel data structure
+4.3 What resources are used when a thread created? How do they differ from those when a process is created?
+	- A thread shares the resources of memory of the process which they belong to. Process creation needs a new address space thus result in an expensive cost in communication compare to the between-thread communication\
+4.4 Provide two programming examples in which multithreading does not provide better performance than a single-threaded solution
+	- Sequential program is not a good candidate
+	- Shell program must closely monitor its own working space such as open files, environment variables, and current working directory
+4.5  Describe the actions taken by a thread library to context switch between user-level threads
+	- Context switching between user threads involves taking a user thread of its LWP and replacing it with another thread. This act typically involves saving and restoring the state of the registers
+4.6 Under what circumstances does a multithreaded solution using multiple kernel threads provide better performance than a single-threaded solution on a single-processor system
+	- When a kernel thread suffers a page fault, another ker thread can do a context switch to exploit the interleaving time.
+4.7 Consider a multiprocessor system and a multithreaded program written using the many-to-many threading model. Let the number of user-level threads in the program be more than the number of processors in the system. Discuss the performance implications of the following scenarios
+	- The number of kernel threads allocated to the program must be greater than the number of processors in order to maximize the utilization due to the context switch.
