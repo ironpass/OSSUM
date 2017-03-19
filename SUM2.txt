@@ -1,6 +1,6 @@
 ﻿答案可參考第八版課本 4.00
 2.1 What is the purpose of system calls
-	- System calls allow user-level processes to request services of he operating system
+	- System calls allow user-level processes to request services of the operating system
 2.2 Five OS's activities regard to process management
 	1) Create and delete system process
 	2) suspend and resume process
@@ -19,7 +19,7 @@
 	- It read commands from user to call the system calls. Usually not part of the kernel because conmmand interpreter is subject to changes.
 2.6 What is the purpose of system programs
 	- System programs can be viewed as bundles of system calls.
-2.7 The service and functions provided by an operating system can be dividede into two ma in categories
+2.7 The service and functions provided by an operating system can be dividede into two main categories
 	1) Enforcing protection between different processes running concurrently in the system
 	2) Provide new functionality that is not supported by hardwares. (Virtual memory and file system)
 2.8 What are the five major activities of an operating system with regard to file management

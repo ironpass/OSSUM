@@ -1,0 +1,8 @@
+Critical section conditions
+	1. Mutual exclusion
+	2. Progress
+	3. Bounded waiting
+Spinlock
+	Can't be implemented on Single processor
+	Good for a short period of time
+	For a longer time, context switch should be implemented instead

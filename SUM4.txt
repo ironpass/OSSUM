@@ -9,11 +9,11 @@ https://www.tutorialspoint.com/operating_system/os_multi_threading.htm
 	b. On systems using either M:1 or M:N mapping, user threads are scheduled by the thread library and the kernel schedules kernel threads
 	c. Kernel threads need not be associated with a process whereas every user thread belongs to a process. Kernel threads are generally more expensive to maintain than user threads as they must be represented with a kernel data structure
 4.3 What resources are used when a thread created? How do they differ from those when a process is created?
-	- A thread shares the resources of memory of the process which they belong to. Process creation needs a new address space thus result in an expensive cost in communication compare to the between-thread communication\
+	- A thread shares the resources of memory of the process which they belong to. Process creation needs a new address space thus result in an expensive cost in communication compare to the between-thread communication
 4.4 Provide two programming examples in which multithreading does not provide better performance than a single-threaded solution
 	- Sequential program is not a good candidate
 	- Shell program must closely monitor its own working space such as open files, environment variables, and current working directory
-4.5  Describe the actions taken by a thread library to context switch between user-level threads
+4.5 Describe the actions taken by a thread library to context switch between user-level threads
 	- Context switching between user threads involves taking a user thread of its LWP and replacing it with another thread. This act typically involves saving and restoring the state of the registers
 4.6 Under what circumstances does a multithreaded solution using multiple kernel threads provide better performance than a single-threaded solution on a single-processor system
 	- When a kernel thread suffers a page fault, another ker thread can do a context switch to exploit the interleaving time.

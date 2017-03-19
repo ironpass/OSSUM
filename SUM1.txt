@@ -1,16 +1,16 @@
-1.1 What are the three main purposes of an operating system?
-	(resources -> environment exe -> prevent errors -> I/O)
+1.1 What are the five main purposes of an operating system?
+	(resources - environment execution - prevent errors - I/O - communication)
 	1) Allocate CPU resources
 	2) Provide environment for program execution
 	3) Supervise program execution to prevent errors
 	4) Manage I/O
 	5) Communication
-1.2 What are the main differences between operating
+1.2 What are the main differences between operating system for mainframe computers and personal computers
 	(for user / for efficiency)
 	- Personal computer operating system is not concerned with fair use or maximal use of computer resources. Instead, they try to optimize the usefulness of the computer for an individual user
 	- Mainframe operating system need more complex scheduling and I/0 algorithms to keep the various system components (for example, CPU, memory, peripheral devices) efficiently utilized
 1.3 The four states needed to run a program on a completely dedicated machine
-	(CPU time -> load to mem -> decode instruction -> control the program)
+	(CPU time -> load to memory -> decode instructions -> control the program)
 	1. Allocate CPU time to run the program
 	2. Load program into memory, then fetch for instructions
 	3. Decode the instructions

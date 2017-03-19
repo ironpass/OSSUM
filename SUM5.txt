@@ -1,0 +1,20 @@
+5.1 Explain the difference between preemptive and nonpreemtive scheduling
+	- Preemptive scheduling allows a process to be interrupted in middle of execution
+	- Nonpreemptive must finish the job that the processor has taken
+5.2 Types of CPU scheduling
+	- FCFS (First come first serve)
+	- SJF (Shortest job first)
+	- RR (Round robin)
+	- Multilevel feedback queues
+	- Priority based
+5.3 Assume that an operating system maps user-level threads to the kernel using the many-to-many model and that the mapping is done through the use of LWPs. Furthermore, the system allows program developers to create real-time threads. Is it necessary to bind a real-time thread to an LWP
+	- The real-time user thread will be scheduled immediately. If otherwise a user thread may have to compete for LWP prior being actually scheduled.
+5.4 Why is it important for the scheduler to distinguish I/O-bound programs from CPU-bound programs
+	- To minimize the latency of user interaction
+5.5 Discuss how the following pairs of scheduling criteria conflict in certain settings
+	- CPU utilization and response time
+		To maximize the utilization, the overhead time needs to be low as possible thus resulting in less context switches -> more response time
+	- Average turnaround time and maximum waiting time
+		To manimize average turnaround time, the shortest jobs should be done first -> the longest jobs are starving.
+	- I/O and CPU utilization
+		To maximize CPU utilization there shouldn't be any context switches contradicting to the policy of maximize I/O utilization that needs context switches
